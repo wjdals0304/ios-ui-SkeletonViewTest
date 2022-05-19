@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		6446F18D283622A10006118E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446F18C283622A10006118E /* AppDelegate.swift */; };
 		6446F18F283622A10006118E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446F18E283622A10006118E /* SceneDelegate.swift */; };
-		6446F191283622A10006118E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446F190283622A10006118E /* ViewController.swift */; };
+		6446F191283622A10006118E /* CodeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446F190283622A10006118E /* CodeBasedViewController.swift */; };
 		6446F194283622A10006118E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6446F192283622A10006118E /* Main.storyboard */; };
 		6446F196283622A20006118E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6446F195283622A20006118E /* Assets.xcassets */; };
 		6446F199283622A20006118E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6446F197283622A20006118E /* LaunchScreen.storyboard */; };
+		6446F1A2283622DF0006118E /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 6446F1A1283622DF0006118E /* SkeletonView */; };
+		6446F1A428362AAE0006118E /* BannerLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446F1A328362AAE0006118E /* BannerLabelView.swift */; };
+		6446F1A628362AD10006118E /* SkeletonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6446F1A528362AD10006118E /* SkeletonCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6446F189283622A10006118E /* SkeletonViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6446F18C283622A10006118E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6446F18E283622A10006118E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6446F190283622A10006118E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6446F190283622A10006118E /* CodeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewController.swift; sourceTree = "<group>"; };
 		6446F193283622A10006118E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6446F195283622A20006118E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6446F198283622A20006118E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6446F19A283622A20006118E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6446F1A328362AAE0006118E /* BannerLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerLabelView.swift; sourceTree = "<group>"; };
+		6446F1A528362AD10006118E /* SkeletonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6446F1A2283622DF0006118E /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +64,9 @@
 			children = (
 				6446F18C283622A10006118E /* AppDelegate.swift */,
 				6446F18E283622A10006118E /* SceneDelegate.swift */,
-				6446F190283622A10006118E /* ViewController.swift */,
+				6446F190283622A10006118E /* CodeBasedViewController.swift */,
+				6446F1A528362AD10006118E /* SkeletonCollectionViewCell.swift */,
+				6446F1A328362AAE0006118E /* BannerLabelView.swift */,
 				6446F192283622A10006118E /* Main.storyboard */,
 				6446F195283622A20006118E /* Assets.xcassets */,
 				6446F197283622A20006118E /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = SkeletonViewTest;
+			packageProductDependencies = (
+				6446F1A1283622DF0006118E /* SkeletonView */,
+			);
 			productName = SkeletonViewTest;
 			productReference = 6446F189283622A10006118E /* SkeletonViewTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 6446F180283622A10006118E;
+			packageReferences = (
+				6446F1A0283622DF0006118E /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			productRefGroup = 6446F18A283622A10006118E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6446F191283622A10006118E /* ViewController.swift in Sources */,
+				6446F191283622A10006118E /* CodeBasedViewController.swift in Sources */,
+				6446F1A428362AAE0006118E /* BannerLabelView.swift in Sources */,
+				6446F1A628362AD10006118E /* SkeletonCollectionViewCell.swift in Sources */,
 				6446F18D283622A10006118E /* AppDelegate.swift in Sources */,
 				6446F18F283622A10006118E /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6446F1A0283622DF0006118E /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6446F1A1283622DF0006118E /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6446F1A0283622DF0006118E /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6446F181283622A10006118E /* Project object */;
 }
